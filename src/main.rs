@@ -27,7 +27,9 @@ fn banner() {
 fn main() -> Result<(), Box<dyn Error>> {
     banner();
 
-    Ok(match Arguments::parse().command {
+    match Arguments::parse().command {
         Commands::Actions(action) => action.run()?,
-    })
+    };
+
+    Ok(())
 }
