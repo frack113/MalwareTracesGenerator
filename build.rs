@@ -4,5 +4,5 @@
 
 extern crate embed_resource;
 fn main() {
-    embed_resource::compile("wag-manifest.rc", embed_resource::NONE);
+    embed_resource::compile("mtg-manifest.rc", embed_resource::NONE);
 }
