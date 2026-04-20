@@ -90,6 +90,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
       - name: Install taplo
-        uses: uncenter/setup-taplo@v1
+        uses: uncenter/setup-taplo@v2
       - name: Lint TOML code
         run: taplo lint --verbose **.toml
